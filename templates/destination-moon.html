@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block bgbody %}
+destination-background
+{% endblock %}
+{% block content %}
+<div class="container-lg my-4">
+    <div class="text-white text-center text-lg-start tracking fs-2 fs-md-1 fs-lg-1 " style="font-family: 'Barlow Condensed', sans-serif;">
+        <span class="text-light-emphasis fw-bold me-3">01</span> PICK YOUR DESTINATION
+    </div>
+    <div class="d-lg-flex justify-content-lg-between my-3 my-lg-5">
+        <div class="my-4 my-md-5 my-lg-0 d-flex align-items-center justify-content-center"><img class="col-8 col-md-7 col-lg-12 mx-auto mx-lg-0 col-lg-6"
+                                                                                        src="{{ data['images']['png'] }}"></div>
+        <div class="col-lg-6 text-white d-flex flex-column justify-content-between mt-lg-0">
+            <ul class="nav nav-underline text-white text-decoration-none tracking text-uppercase fs-6 fs-md-4
+            justify-content-between my-2 my-md-3 my-lg-0 mx-auto mx-lg-0 col-10 col-md-7 col-lg-6"
+                style="font-family: 'Barlow Condensed', sans-serif;">
+                <li class="nav-item">
+                    <a class="nav-link text-white tracking" href="{{ url_for('destination', name='moon') }}">Moon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white tracking" href="{{ url_for('destination', name='mars') }}">mars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white tracking" href="{{ url_for('destination', name='europa') }}">europa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white tracking" href="{{ url_for('destination', name='titan') }}">titan</a>
+                </li>
+            </ul>
+            <div class="text-uppercase display-1 text-center text-lg-start my-2 my-md-3 my-lg-0" style="font-family: 'Bellefair', serif;">{{ data['name'] }}</div>
+            <div class="travel2 text-center text-lg-start mx-md-auto mx-lg-0 text-lg-start mt-2 mb-3 mt-lg-0 mb-lg-0">{{ data['description'] }}</div>
+            <hr class="col-12 col-lg-10 my-2 my-md-3 my-lg-0">
+            <div class="text-uppercase text-center text-lg-start col-lg-8 d-flex flex-column d-lg-flex flex-lg-row justify-content-between my-2 my-lg-0">
+                <div class="my-2 my-md-3 my-lg-0 mx-md-auto mx-lg-0">
+                    <div class="travel2 mt-1 mt-md-2 mt-lg-0">AVG. DISTANCE</div>
+                    <div class="fs-2" style="font-family: 'Bellefair', serif;">{{ data['distance'] }}</div>
+                </div>
+                <div class="my-2 my-md-3 my-lg-0 mx-md-auto">
+                    <div class="travel2 mt-1 mt-md-2 mt-lg-0">EST. TRAVEL TIME</div>
+                    <div class="fs-2" style="font-family: 'Bellefair', serif;">{{ data['travel'] }}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block bgbody %}
+technology-background
+{% endblock %}
+{% block content %}
+
+<div class="container-lg my-4">
+    <div class="col-lg-10 text-white text-center text-lg-start tracking fs-4 "
+         style="font-family: 'Barlow Condensed', sans-serif;">
+        <span class="text-light-emphasis fw-bold me-3">03</span> SPACE LAUNCH 101
+    </div>
+    <div class=" d-flex flex-column-reverse d-lg-flex flex-lg-row align-items-lg-center mx-lg-auto my-lg-5">
+        <div class="col-lg-1 mt-3 mt-lg-0 d-flex justify-content-center">
+            <ul class="nav flex-row flex-lg-column justify-content text-decoration-none" style="font-family: 'Bellefair', serif;">
+                <li class=" nav-item mx-2 my-lg-2">
+                    <a class="nav-link tech-btn d-flex justify-content-center align-items-center active fs-3"
+                       aria-current="page" href="{{ url_for('technology', name='launch') }}">1</a>
+                </li>
+                <li class="nav-item mx-2 my-lg-2">
+                    <a class="nav-link tech-btn d-flex justify-content-center align-items-center fs-3"
+                       href="{{ url_for('technology', name='spaceport') }}">2</a>
+                </li>
+                <li class="nav-item mx-2 my-lg-2">
+                    <a class="nav-link tech-btn d-flex justify-content-center align-items-center fs-3"
+                       href="{{ url_for('technology', name='capsule') }}">3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-10 d-flex flex-column-reverse d-lg-flex flex-lg-row justify-content-lg-around align-items-lg-center">
+            <div class="col-lg-5 mt-4 mt-md-5 mt-lg-0 text-center mx-md-auto mx-lg-0 text-lg-start text-white">
+                <p class="text-uppercase travel2 tracking text-md-center text-lg-start mx-md-auto mx-lg-0" style="font-family: 'Barlow Condensed', sans-serif;">the terminology...</p>
+                <p class="text-uppercase display-3 text-md-center text-lg-start" style="font-family: 'Bellefair', serif;">{{ data['name'] }}</p>
+                <p class="travel2 text-md-center text-lg-start">{{ data['description'] }}
+                </p>
+            </div>
+            <div class="col-lg-5 mt-4 mt-md-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                <img class="col-11 col-md-8 col-lg-12" src="{{ data['images']['portrait']}}"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,322 @@
+/* base */
+
+.base-blur-background {
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(5px);
+}
+hr {
+    position:relative;
+}
+.navbar-toggler-icon {
+    text-decoration: none;
+    color: white
+}
+
+.tracking {
+    letter-spacing: 2.75px;
+}
+
+/* home */
+.home-background {
+    min-height: 100vh;
+    background-image: url(home/background-home-mobile.jpg);
+    background-size: cover;
+}
+
+.travel {
+    color: hsl(231, 77%, 90%);
+    max-width: 50ch;
+    line-height: 1.5;
+}
+.travel2 {
+    color: hsl(231, 77%, 90%);
+    max-width: 50ch;
+    line-height: 1.5;
+}
+
+
+.barlow {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.space {
+    font-size: 5rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.explore {
+    width: 250px;
+    height:250px;
+    border-radius:50%;
+}
+
+.explore:hover {
+   box-shadow: 0px 0px 100px 50px white;
+}
+
+/* destination */
+
+.destination-background {
+    background-image: url(destination/background-destination-mobile.jpg)
+}
+
+.crew-background {
+    background-image: url(crew/background-crew-mobile.jpg);
+    background-size: cover;
+}
+
+.technology-background {
+    background-image: url(technology/background-technology-mobile.jpg);
+    background-size: cover;
+}
+
+.display-1 {
+    font-size: 3.25rem;
+}
+
+.tech-btn {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    outline: solid 1px hsla(231, 77%, 90%, 0.25);
+    color: white
+}
+
+.tech-btn:link {
+    color: white;
+}
+
+.tech-btn:visited {
+    color: white;
+}
+
+
+.tech-btn:hover {
+    outline: solid 1px white;
+    background-color: white;
+    color: hsl(230 35% 7%);
+
+
+}
+.tech-btn:active {
+    background-color: white;
+    color: hsl(230 35% 7%);
+}
+
+.crew-btn {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    outline: solid 1px hsla(231, 77%, 90%, 0.25);
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.crew-btn:link {
+    color: white;
+}
+
+.crew-btn:visited {
+    color: white;
+}
+
+
+.crew-btn:hover {
+    outline: solid 1px white;
+    background-color: white;
+    color: hsl(230 35% 7%);
+
+
+}
+.crew-btn:active {
+    background-color: white;
+    color: hsl(230 35% 7%);
+}
+
+
+@media only screen and (min-width: 768px) {
+.home-background {
+    background-image: url(home/background-home-tablet.jpg);
+    background-size: cover;
+
+}
+/* destination */
+
+.destination-background {
+    background-image: url(destination/background-destination-tablet.jpg);
+    background-size: cover;
+
+}
+
+.crew-background {
+    background-image: url(crew/background-crew-tablet.jpg);
+    background-size: cover;
+}
+
+.technology-background {
+    background-image: url(technology/background-technology-tablet.jpg);
+    background-size: cover;
+}
+
+
+.display-1 {
+    font-size: 5.25rem;
+}
+
+
+.travel {
+    color: hsl(231, 77%, 90%);
+    max-width: 50ch;
+    line-height: 1.5;
+}
+.travel2 {
+    color: hsl(231, 77%, 90%);
+    max-width: 50ch;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.barlow {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.space {
+    font-size: 7rem;
+}
+
+
+.explore {
+    width: 300px;
+    height:300px;
+    border-radius:50%;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+.home-background {
+    background-image: url(home/background-home-desktop.jpg);
+    overflow-y: hidden;
+
+}
+/* destination */
+
+.destination-background {
+    background-image: url(destination/background-destination-desktop.jpg)
+}
+
+.crew-background {
+    background-image: url(crew/background-crew-desktop.jpg);
+    background-size: cover;
+}
+
+.technology-background {
+    background-image: url(technology/background-technology-desktop.jpg);
+    background-size: cover;
+}
+
+
+.display-1 {
+    font-size: 6.25rem;
+}
+
+.explore {
+    width: 300px;
+    height:300px;
+    border-radius:50%;
+}
+.travel {
+    color: hsl(231, 77%, 90%);
+    text-align: left;
+    max-width: 50ch;
+    line-height: 1.5;
+}
+.travel2 {
+    color: hsl(231, 77%, 90%);
+    text-align: left;
+    max-width: 50ch;
+    line-height: 2;
+    font-size: 1rem;
+}
+
+.barlow {
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.space {
+    font-size: 8rem;
+    text-align: left;
+}
+
+.tech-btn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    outline: solid 1px hsla(231, 77%, 90%, 0.25);
+    color: white
+}
+
+.tech-btn:link {
+    color: white;
+}
+
+.tech-btn:visited {
+    color: white;
+}
+
+
+.tech-btn:hover {
+    outline: solid 1px white;
+    background-color: white;
+    color: hsl(230 35% 7%);
+
+
+}
+.tech-btn:active {
+    background-color: white;
+    color: hsl(230 35% 7%);
+}
+.crew-btn {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    outline: solid 1px hsla(231, 77%, 90%, 0.25);
+    color: white
+}
+
+.crew-btn:link {
+    color: white;
+}
+
+.crew-btn:visited {
+    color: white;
+}
+
+
+.crew-btn:hover {
+    outline: solid 1px white;
+    background-color: white;
+    color: hsl(230 35% 7%);
+
+
+}
+.crew-btn:active {
+    background-color: white;
+    color: hsl(230 35% 7%);
+}
+}
