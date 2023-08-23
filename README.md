@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/akinwumi-sa/space-tourism-website)
+- Live Site URL: [live site URL](https://space-tourism-2y62.onrender.com/)
 
 ## My process
 
